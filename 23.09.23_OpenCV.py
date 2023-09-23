@@ -1,0 +1,15 @@
+import cv2
+import numpy as numpy
+data=cv2.imread('d1.jpg')
+cv2.namedWindow('w')
+cv2.imshow('w',data)
+cv2.waitKey()
+cv2.destroyAllWindows()
+gray_data=cv2.cvtColor(data,cv2.COLOR_BGR2GRAY)
+RGB_data=cv2.cvtColor(data,cv2.COLOR_BGR2RGB)
+cv2.namedWindow('t1')
+cv2.imshow('t1',gray_data)
+cv2.namedWindow('t2')
+cv2.imshow('t2',RGB_data)
+cv2.waitKey()
+cv2.destroyAllWindows()
